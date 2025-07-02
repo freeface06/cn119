@@ -1,0 +1,320 @@
+/* 기본 설정 */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f8f9fc;
+    margin: 0;
+}
+
+#calendar {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 범례 */
+#calendar-legend {
+    max-width: 1000px;
+    margin: 0 auto 10px auto;
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    font-size: 14px;
+}
+
+.fc-scrollgrid {
+    border: none !important;
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+    border: none !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+    background-color: white !important;
+}
+
+.legend-box {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-left: 0 !important;
+}
+
+/* 헤더 */
+.fc-header-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.fc-toolbar-title {
+    padding-left: 10px;
+    font-size: 18px !important;
+    font-weight: bold;
+    color: #222;
+}
+
+.fc-button {
+    background-color: #e2e8f0;
+    border: none;
+    color: #333;
+    font-weight: 500;
+    padding: 5px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.fc-button:hover {
+    background-color: #cbd5e1;
+    cursor: pointer;
+}
+
+.fc-button-primary {
+    background-color: #4299e1;
+    color: white;
+}
+
+.fc-button-primary:hover {
+    background-color: #3182ce;
+}
+
+/* 요일 헤더 */
+.fc-col-header-cell {
+    background-color: #f1f5f9;
+    color: #334155;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* 날짜 셀 */
+.fc-daygrid-day {
+    transition: background-color 0.3s;
+}
+
+.fc-daygrid-day:hover {
+    background-color: #f0f9ff;
+    cursor: pointer;
+}
+
+/* 오늘 강조 */
+.fc-day-today {
+    background-color: #ffe8e8 !important;
+}
+
+/* 이벤트 */
+.fc-event {
+    border: none;
+    padding: 3px 6px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    color: white;
+}
+
+.fc-event:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+    transition: all 0.2s ease;
+}
+
+/* type별 색상 */
+.fc-type-basic {
+    background-color: #10b981 !important;
+    /* 초록 */
+}
+
+.fc-type-expert {
+    background-color: #3b82f6 !important;
+    /* 파랑 */
+}
+
+.fc-type-default {
+    background-color: #6b7280 !important;
+    /* 회색 */
+}
+
+/* 모달 스타일 */
+.custom-modal {
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-modal-content {
+    background-color: #fff;
+    padding: 30px 40px;
+    width: 700px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.modal-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.modal-table th,
+.modal-table td {
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+
+.modal-table th {
+    background-color: #f9f9f9;
+    width: 25%;
+    text-align: left;
+}
+
+.file-section {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.file-label {
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.file-link {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+.modal-close-wrap {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.modal-close-btn {
+    padding: 8px 20px;
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-close-btn:hover {
+    background-color: #303f9f;
+}
+
+/* 캘린더 강제 스크롤 제거 */
+.fc {
+    overflow: visible !important;
+}
+
+.file-section {
+    margin-top: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.file-label {
+    font-weight: 600;
+    margin-right: 12px;
+    min-width: 80px;
+}
+
+.file-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: #333;
+}
+
+.file-link:hover {
+    text-decoration: underline;
+    color: #1d4ed8;
+}
+
+.file-icon {
+    font-size: 20px;
+    color: #3b82f6;
+}
+
+.file-name {
+    font-weight: 500;
+}
+
+.file-size {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* 더 깔끔하게 보이도록 커스텀 */
+.event-date-info {
+    color: white;
+    /* 혹은 #eee, 필요시 */
+    text-align: right;
+}
+
+.fc .fc-day-sun {
+    color: red;
+    /* 텍스트 빨간색 */
+}
+
+.fc-theme-standard td {
+    font-size: 12px;
+}
+
+/* 모달 애니메이션 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s forwards;
+}
+
+.fade-out {
+    animation: fadeOut 0.3s forwards;
+}
