@@ -104,7 +104,7 @@ const DATA = [
             "chungnam": 13
         },
         "start_date": "2025-06-23",
-        "end_date": "2025-06-24",
+        "end_date": "2025-07-04",
         "file_name": "제3기 펌뷸런스대원 기초능력향상 과정 입교 및 생활안내.pdf",
         "file_path": "./file/제3기+펌뷸런스대원+기초능력향상+과정+입교+및+생활안내.pdf"
     },

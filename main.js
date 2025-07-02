@@ -51,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const calendar = new FullCalendar.Calendar(calendarEl, {
         initialView: 'dayGridMonth',
+        initialDate: '2025-06-01',
         locale: 'ko',
         headerToolbar: {
             left: 'prev,next today',
@@ -112,6 +113,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     calendar.render();
+
+    window.addEventListener('resize', () => {
+        const newView = window.innerWidth < 768 ? 'listMonth' : 'dayGridMonth';
+        if (newView !== currentView) {
+            currentView = newView;
+            calendar.changeView(newView);
+        }
+    });
 
     // 범례
     const legend = document.createElement('div');

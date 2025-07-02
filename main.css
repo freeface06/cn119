@@ -6,12 +6,29 @@ body {
 
 #calendar {
     max-width: 1500px;
-    min-width: 800px;
     margin: 50px auto;
     padding: 20px;
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.fc-theme-standard th {
+    border: none !important;
+    border-bottom: 1px solid #ddd !important;
+    background-color: white !important;
+}
+
+.fc-theme-standard td {
+    font-size: 0.7rem !important;
+}
+
+.fc .fc-daygrid-event {
+    font-size: 0.7rem;
+}
+
+.fc-scrollgrid {
+    border: none !important;
 }
 
 /* 범례 */
@@ -153,7 +170,7 @@ body {
 
 .custom-modal-content {
     background-color: #fff;
-    padding: 30px 40px;
+    padding: 30px 20px;
     width: 700px;
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
