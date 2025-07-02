@@ -1,6 +1,5 @@
 body {
     font-family: 'Noto Sans KR', sans-serif;
-    background-color: #f8f9fc;
     margin: 0;
 }
 
@@ -10,7 +9,14 @@ body {
     padding: 20px;
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+hr {
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 100px;
+    height: 1.2px;
+    background-color: black;
 }
 
 .fc-theme-standard th {
@@ -28,6 +34,10 @@ body {
 }
 
 .fc-scrollgrid {
+    border: none !important;
+}
+
+.fc-scrollgrid-sync-table {
     border: none !important;
 }
 
@@ -298,4 +308,125 @@ body {
 
 .fade-out {
     animation: fadeOut 0.3s forwards;
+}
+
+
+/* 헤더 */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    height: 120px;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 60px;
+    margin-right: 10px;
+}
+
+.header .logo-text {
+    line-height: 1.2;
+}
+
+.header .logo-text .kor {
+    font-weight: bold;
+    font-size: 18px;
+    color: #1e1e1e;
+}
+
+.header .logo-text .eng {
+    font-size: 13px;
+    color: #555;
+}
+
+.header .menu {
+    display: flex;
+    gap: 50px;
+    font-weight: 500;
+    font-size: 15px;
+    padding-left: 20%;
+}
+
+.header .menu a {
+    text-decoration: none;
+    color: #1e1e1e;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.header .menu a:hover {
+    color: #0066cc;
+}
+
+.header .right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+}
+
+/* 히어로 이미지 영역 */
+.hero {
+    background-image: url('./back.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 94px 40px 50px 40px;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.breadcrumb {
+    display: flex;
+}
+
+/* ✅ 반응형: 모바일에서 메뉴 및 기타 요소 숨김 */
+@media (max-width: 768px) {
+
+    .header .menu,
+    .header .right span:not(:nth-child(2)) {
+        /* 로그인, 검색 아이콘만 숨김 */
+        display: none;
+    }
+
+    .hero,
+    .breadcrumb,
+    .hero-title {
+        display: none;
+    }
+
+    .header .logo-text .kor {
+        font-size: 16px;
+    }
+
+    .header .logo-text .eng {
+        font-size: 12px;
+    }
 }
