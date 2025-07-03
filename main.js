@@ -65,6 +65,10 @@ document.addEventListener('DOMContentLoaded', function () {
         contentHeight: 'auto',
         expandRows: true,
         dayMaxEventRows: false,
+        dayMaxEvents: 3,
+        moreLinkText: function (n) {
+            return `더보기 ${n}개`;
+        },
         eventClick: function (info) {
             const props = info.event.extendedProps;
 
