@@ -159,12 +159,12 @@ hr {
 }
 
 .fc-event:hover {
-    transform: scale3d(1.05, 1.05, 1);
+    transform: scale3d(1.02, 1.02, 1);
     z-index: 9999;
 }
 
 .fc-event-hover {
-    transform: scale3d(1.05, 1.05, 1);
+    transform: scale3d(1.02, 1.02, 1);
     z-index: 9999;
     transition: all 0.2s ease;
 }
