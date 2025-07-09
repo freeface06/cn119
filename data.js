@@ -1,5 +1,6 @@
 const DATA = [
     {
+        "id": 1,
         "title": "제32기 소방위 관리역량 과정",
         "author": "오진웅",
         "created_date": "2025-07-01",
@@ -19,6 +20,7 @@ const DATA = [
         "file_path": "./file/제32기+소방위+관리역량+과정+입교+및+생활안내.pdf"
     },
     {
+        "id": 2,
         "title": "제31기 소방위 관리역량 과정",
         "author": "오진웅",
         "created_date": "2025-07-01",
@@ -37,6 +39,7 @@ const DATA = [
         "file_path": "./file/제31기+소방위+관리역량+과정+입교+및+생활안내.pdf"
     },
     {
+        "id": 3,
         "title": "제4기 소방행정실무 과정",
         "author": "오진웅",
         "created_date": "2025-07-01",
@@ -55,6 +58,7 @@ const DATA = [
         "file_path": "./file/제4기+소방행정실무+과정+입교+및+생활안내.pdf"
     },
     {
+        "id": 4,
         "title": "제4기 예산회계실무 과정",
         "author": "오진웅",
         "created_date": "2025-07-01",
@@ -73,6 +77,7 @@ const DATA = [
         "file_path": "./file/제4기+예산회계실무+과정+입교+및+생활안내.pdf"
     },
     {
+        "id": 5,
         "title": "제7기 급류구조 과정",
         "author": "오진웅",
         "created_date": "2025-06-19",
@@ -91,6 +96,7 @@ const DATA = [
         "file_path": "./file/제7기+급류구조과정+교육+운영계획.pdf"
     },
     {
+        "id": 6,
         "title": "제3기 펌뷸런스대원 기초능력향상 과정",
         "author": "오진웅",
         "created_date": "2025-06-19",
@@ -109,6 +115,7 @@ const DATA = [
         "file_path": "./file/제3기+펌뷸런스대원+기초능력향상+과정+입교+및+생활안내.pdf"
     },
     {
+        "id": 7,
         "title": "제5기 재난현장 언론대응 과정",
         "author": "오진웅",
         "created_date": "2025-06-19",
@@ -126,6 +133,7 @@ const DATA = [
         "file_path": "./file/제5기+재난현장+언론대응+과정+입교+및+생활안내.pdf"
     },
     {
+        "id": 8,
         "title": "제30기 소방위 관리역량 과정",
         "author": "오진웅",
         "created_date": "2025-06-19",
@@ -145,6 +153,7 @@ const DATA = [
         "file_path": "./file/제30기+소방위+관리역량+과정+입교+및+생활안내.pdf"
     },
     {
+        "id": 9,
         "title": "제4기 위험물 실무 과정",
         "author": "오진웅",
         "created_date": "2025-06-19",
@@ -163,6 +172,7 @@ const DATA = [
         "file_path": "./file/제4기+위험물+실무+과정+입교+및+생활안내.pdf"
     },
     {
+        "id": 10,
         "title": "제3기 초급 현장지휘관 자격인증 과정",
         "author": "오진웅",
         "created_date": "2025-06-19",
@@ -180,6 +190,7 @@ const DATA = [
         "file_path": "./file/제3기+초급+현장지휘관+자격인증+과정+교육+운영계획.pdf"
     },
     {
+        "id": 11,
         "title": "제29기 소방위 관리역량 과정",
         "author": "오진웅",
         "created_date": "2025-06-19",
@@ -199,6 +210,7 @@ const DATA = [
         "file_path": "./file/제29기+소방위+관리역량+과정+입교+및+생활안내.pdf"
     },
     {
+        "id": 12,
         "title": "제28기 소방위 관리역량 과정",
         "author": "오진웅",
         "created_date": "2025-06-10",
@@ -218,6 +230,7 @@ const DATA = [
         "file_path": "./file/제28기+소방위+관리역량+과정+입교+및+생활안내.pdf"
     },
     {
+        "id": 13,
         "title": "제22기 소방드론 자격취득 과정",
         "author": "오진웅",
         "created_date": "2025-06-10",
@@ -237,6 +250,7 @@ const DATA = [
         "file_path": "./file/제22기+소방드론+자격취득+과정+입교+및+생활안내.pdf"
     },
     {
+        "id": 14,
         "title": "제2기 초급 현장지휘관 자격인증 과정",
         "author": "오진웅",
         "created_date": "2025-06-10",
@@ -255,6 +269,7 @@ const DATA = [
         "file_path": "./file/제2기+초급+현장지휘관+자격인증과정+입교+및+생활안내.pdf"
     },
     {
+        "id": 15,
         "title": "제2기 전문구급소생술(시뮬레이션) 과정",
         "author": "오진웅",
         "created_date": "2025-06-10",
@@ -272,6 +287,7 @@ const DATA = [
         "file_path": "./file/제2기+전문구급소생술(시뮬레이션)+과정+입교+및+생활안내.pdf"
     },
     {
+        "id": 16,
         "title": "제27기 소방위 관리역량 과정",
         "author": "오진웅",
         "created_date": "2025-06-10",
@@ -291,6 +307,7 @@ const DATA = [
         "file_path": "./file/제27기+소방위+관리역량+과정+입교+및+생활안내.pdf"
     },
     {
+        "id": 17,
         "title": "제2기 소방시설 기초(기계) 과정",
         "author": "오진웅",
         "created_date": "2025-06-04",
@@ -309,6 +326,7 @@ const DATA = [
         "file_path": "./file/제2기+소방시설기초(기계)+과정+입교+및+생활안내.pdf"
     },
     {
+        "id": 18,
         "title": "제2기 소방시설 기초(전기) 과정",
         "author": "오진웅",
         "created_date": "2025-06-04",
@@ -327,6 +345,7 @@ const DATA = [
         "file_path": "./file/제2기+소방시설기초(전기)+과정+입교+및+생활안내.pdf"
     },
     {
+        "id": 19,
         "title": "제2기 다수사상자 구급대응 과정",
         "author": "오진웅",
         "created_date": "2025-06-04",
@@ -344,6 +363,7 @@ const DATA = [
         "file_path": "./file/제2기+다수사상자+구급대응+과정+입교+및+생활안내.pdf"
     },
     {
+        "id": 20,
         "title": "제2기 현장지휘 교육 교관 양성 과정",
         "author": "오진웅",
         "created_date": "2025-06-04",
@@ -359,5 +379,41 @@ const DATA = [
         "end_date": "2025-06-05",
         "file_name": "제1기 현장지휘교육 교관 양성과정 입교 및 생활안내.pdf",
         "file_path": "./file/제1기+현장지휘교육+교관+양성과정+입교+및+생활안내.pdf"
-    }
+    },
+        {
+        "id": 21,
+        "title": "제2기 테스트 과정",
+        "author": "오진웅",
+        "created_date": "2025-06-04",
+        "type": "전문교육",
+        "residential": "비합숙",
+        "total_participants": "17명",
+        "participants_detail": {
+            "daejeon": 2,
+            "chungbuk": 6,
+            "chungnam": 9
+        },
+        "start_date": "2025-07-11",
+        "end_date": "2025-07-11",
+        "file_name": "제1기 현장지휘교육 교관 양성과정 입교 및 생활안내.pdf",
+        "file_path": "./file/제1기+현장지휘교육+교관+양성과정+입교+및+생활안내.pdf"
+    },
+        {
+        "id": 22,
+        "title": "제3기 하루날짜 테스트 과정",
+        "author": "오진웅",
+        "created_date": "2025-06-04",
+        "type": "전문교육",
+        "residential": "비합숙",
+        "total_participants": "17명",
+        "participants_detail": {
+            "daejeon": 2,
+            "chungbuk": 6,
+            "chungnam": 9
+        },
+        "start_date": "2025-06-06",
+        "end_date": "2025-06-06",
+        "file_name": "제1기 현장지휘교육 교관 양성과정 입교 및 생활안내.pdf",
+        "file_path": "./file/제1기+현장지휘교육+교관+양성과정+입교+및+생활안내.pdf"
+    },
 ]
