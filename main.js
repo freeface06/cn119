@@ -28,11 +28,11 @@ document.addEventListener('DOMContentLoaded', function () {
     function getIconForType(type) {
         switch (type) {
             case '기본교육':
-                return 'school';
+                return 'fire_extinguisher';
             case '전문교육':
-                return 'science';
+                return 'fire_extinguisher';
             default:
-                return 'info';
+                return 'fire_extinguisher';
         }
     }
 
@@ -40,7 +40,23 @@ document.addEventListener('DOMContentLoaded', function () {
         const type = item.type === '기본교육' || item.type === '전문교육' ? item.type : '기타';
         const palette = colorMap[type];
         const colorIndex = colorIndexMap[type] % palette.length;
-        const backgroundColor = palette[colorIndex];
+
+        let backgroundColor = palette[colorIndex];
+
+        if (item.type === '신임교육') {
+            backgroundColor = 'red';
+        } else if (item.type === '기본교육') {
+            backgroundColor = 'orange';
+        } else if (item.type === '전문교육') {
+            backgroundColor = 'green';
+        } else if (item.type === '지휘역량') {
+            backgroundColor = 'skyblue';
+        } else if (item.type === '보수교육') {
+            backgroundColor = 'navy';
+        } else if (item.type === '대민교육') {
+            backgroundColor = 'purple';
+        }
+
         colorIndexMap[type]++; // 다음 색으로 순환
 
         const isOneDay = item.start_date === item.end_date;
@@ -60,9 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 file: item.file_path,
                 created_date: item.created_date
             },
-            backgroundColor: isOneDay ? 'transparent' : backgroundColor,
-            borderColor: isOneDay ? '#d1d5db' : backgroundColor, // 연한 회색 테두리 대체
-            textColor: '#000000'
+            backgroundColor: backgroundColor,
         };
     });
 
@@ -71,8 +85,8 @@ document.addEventListener('DOMContentLoaded', function () {
         initialDate: '2025-06-01',
         locale: 'ko',
         headerToolbar: {
-            left: 'prev,next today',
-            center: 'title',
+            left: 'title prev,next,today',
+            center: '',
             right: ''
         },
         buttonText: {
@@ -144,23 +158,41 @@ document.addEventListener('DOMContentLoaded', function () {
     const legend = document.createElement('div');
     legend.className = 'calendar-legend';
     legend.innerHTML = `
-        <div class="legend-item">
+        <div class="legend-item" style="color:red;">
             <span class="legend-box">
-            <span class="material-symbols-outlined">science</span>
+            <span class="material-symbols-outlined">fire_extinguisher</span>
+            </span>
+            신임교육
+        </div>
+        <div class="legend-item" style="color:orange;">
+            <span class="legend-box">
+            <span class="material-symbols-outlined">fire_extinguisher</span>
             </span>
             기본교육
         </div>
-        <div class="legend-item">
+        <div class="legend-item" style="color:green;">
             <span class="legend-box">
-            <span class="material-symbols-outlined">school</span>
+            <span class="material-symbols-outlined">fire_extinguisher</span>
             </span>
             전문교육
         </div>
-        <div class="legend-item">
+        <div class="legend-item" style="color:skyblue;">
             <span class="legend-box">
-            <span class="material-symbols-outlined">info</span>
+            <span class="material-symbols-outlined">fire_extinguisher</span>
             </span>
-            기타
+            지휘역량
+        </div>
+        <div class="legend-item" style="color:navy;">
+            <span class="legend-box">
+            <span class="material-symbols-outlined">fire_extinguisher</span>
+            </span>
+            보수교육
+        </div>
+        <div class="legend-item" style="color:purple;">
+            <span class="legend-box">
+            <span class="material-symbols-outlined">fire_extinguisher</span>
+            </span>
+            대민교육
         </div>
     `;
 
@@ -227,7 +259,6 @@ document.addEventListener('DOMContentLoaded', function () {
     toggleBtn.id = 'toggle-events-btn';
     toggleBtn.type = 'button';
     toggleBtn.textContent = '전체';
-    toggleBtn.style.width = '70px'; // ✅ 고정 너비
     toggleBtn.className = 'fc-button fc-button-primary'; // ✅ FullCalendar 스타일 그대로 적용
 
     // ✅ 오늘 버튼 옆에 삽입

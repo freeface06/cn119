@@ -380,7 +380,7 @@ const DATA = [
         "file_name": "제1기 현장지휘교육 교관 양성과정 입교 및 생활안내.pdf",
         "file_path": "./file/제1기+현장지휘교육+교관+양성과정+입교+및+생활안내.pdf"
     },
-        {
+    {
         "id": 21,
         "title": "제2기 테스트 과정",
         "author": "오진웅",
@@ -398,7 +398,7 @@ const DATA = [
         "file_name": "제1기 현장지휘교육 교관 양성과정 입교 및 생활안내.pdf",
         "file_path": "./file/제1기+현장지휘교육+교관+양성과정+입교+및+생활안내.pdf"
     },
-        {
+    {
         "id": 22,
         "title": "제3기 하루날짜 테스트 과정",
         "author": "오진웅",
@@ -413,6 +413,78 @@ const DATA = [
         },
         "start_date": "2025-06-06",
         "end_date": "2025-06-06",
+        "file_name": "제1기 현장지휘교육 교관 양성과정 입교 및 생활안내.pdf",
+        "file_path": "./file/제1기+현장지휘교육+교관+양성과정+입교+및+생활안내.pdf"
+    },
+    {
+        "id": 23,
+        "title": "제3기 신임교육 테스트 과정",
+        "author": "오진웅",
+        "created_date": "2025-06-04",
+        "type": "신임교육",
+        "residential": "비합숙",
+        "total_participants": "17명",
+        "participants_detail": {
+            "daejeon": 2,
+            "chungbuk": 6,
+            "chungnam": 9
+        },
+        "start_date": "2025-06-06",
+        "end_date": "2025-06-07",
+        "file_name": "제1기 현장지휘교육 교관 양성과정 입교 및 생활안내.pdf",
+        "file_path": "./file/제1기+현장지휘교육+교관+양성과정+입교+및+생활안내.pdf"
+    },
+    {
+        "id": 24,
+        "title": "제3기 지휘역량 테스트 과정",
+        "author": "오진웅",
+        "created_date": "2025-06-04",
+        "type": "지휘역량",
+        "residential": "비합숙",
+        "total_participants": "17명",
+        "participants_detail": {
+            "daejeon": 2,
+            "chungbuk": 6,
+            "chungnam": 9
+        },
+        "start_date": "2025-06-06",
+        "end_date": "2025-06-07",
+        "file_name": "제1기 현장지휘교육 교관 양성과정 입교 및 생활안내.pdf",
+        "file_path": "./file/제1기+현장지휘교육+교관+양성과정+입교+및+생활안내.pdf"
+    },
+    {
+        "id": 25,
+        "title": "제3기 보수교육 테스트 과정",
+        "author": "오진웅",
+        "created_date": "2025-06-04",
+        "type": "보수교육",
+        "residential": "비합숙",
+        "total_participants": "17명",
+        "participants_detail": {
+            "daejeon": 2,
+            "chungbuk": 6,
+            "chungnam": 9
+        },
+        "start_date": "2025-06-29",
+        "end_date": "2025-06-30",
+        "file_name": "제1기 현장지휘교육 교관 양성과정 입교 및 생활안내.pdf",
+        "file_path": "./file/제1기+현장지휘교육+교관+양성과정+입교+및+생활안내.pdf"
+    },
+    {
+        "id": 26,
+        "title": "제3기 대민교육 테스트 과정",
+        "author": "오진웅",
+        "created_date": "2025-06-04",
+        "type": "대민교육",
+        "residential": "비합숙",
+        "total_participants": "17명",
+        "participants_detail": {
+            "daejeon": 2,
+            "chungbuk": 6,
+            "chungnam": 9
+        },
+        "start_date": "2025-06-29",
+        "end_date": "2025-06-30",
         "file_name": "제1기 현장지휘교육 교관 양성과정 입교 및 생활안내.pdf",
         "file_path": "./file/제1기+현장지휘교육+교관+양성과정+입교+및+생활안내.pdf"
     },

@@ -46,12 +46,21 @@ hr {
     border: none !important;
 }
 
+.fc-event-title {
+    color: white;
+}
+
+.fc-toolbar-title {
+    font-size: 36px !important;
+    font-weight: bold !important;
+}
+
 /* 범례 */
 .calendar-legend {
     max-width: 1000px;
     display: flex;
     justify-content: flex-end;
-    gap: 16px;
+    gap: 0px;
     font-size: 14px;
     flex-wrap: wrap;
     align-items: center;
@@ -77,9 +86,6 @@ hr {
 
 .fc-toolbar-title {
     padding-left: 10px;
-    font-size: 18px !important;
-    font-weight: bold;
-    color: #222;
 }
 
 /* 버튼 */
@@ -301,6 +307,10 @@ hr {
     overflow: visible !important;
 }
 
+.fc-button-group button {
+    margin-right: 5px !important;
+}
+
 /* 모달 애니메이션 */
 @keyframes fadeIn {
     from {
@@ -429,6 +439,23 @@ hr {
 
 .fc .fc-daygrid-day-frame {
     min-height: 140px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    color: red;
+}
+
+.legend-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.legend-box span {
+    font-size: 18px;
 }
 
 /* ✅ 반응형: 모바일에서 메뉴 및 기타 요소 숨김 */
