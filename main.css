@@ -155,18 +155,19 @@ hr {
 .fc-event {
     position: relative;
     z-index: 1;
-    transition: all 0.2s ease;
+    transition: all 0.5s ease;
 }
 
 .fc-event:hover {
-    transform: scale3d(1.02, 1.02, 1);
+    font-size: 13px !important;
     z-index: 9999;
+    transition: font-size 0.5s ease;
 }
 
 .fc-event-hover {
-    transform: scale3d(1.02, 1.02, 1);
+    font-size: 13px !important;
     z-index: 9999;
-    transition: all 0.2s ease;
+    transition: font-size 0.5s ease;
 }
 
 .fc-daygrid-event-harness {
