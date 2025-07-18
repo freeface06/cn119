@@ -47,11 +47,11 @@ document.addEventListener('DOMContentLoaded', function () {
             backgroundColor = 'red';
         } else if (item.type === '기본교육') {
             backgroundColor = 'orange';
-        } else if (item.type === '전문교육') {
+        } else if (item.type === '보수교육') {
             backgroundColor = 'green';
         } else if (item.type === '지휘역량') {
             backgroundColor = 'skyblue';
-        } else if (item.type === '보수교육') {
+        } else if (item.type === '전문교육') {
             backgroundColor = 'navy';
         } else if (item.type === '대민교육') {
             backgroundColor = 'purple';
@@ -158,39 +158,39 @@ document.addEventListener('DOMContentLoaded', function () {
     const legend = document.createElement('div');
     legend.className = 'calendar-legend';
     legend.innerHTML = `
-        <div class="legend-item" style="color:red;">
+        <div class="legend-item">
             <span class="legend-box">
-            <span class="material-symbols-outlined">fire_extinguisher</span>
+            <span class="material-symbols-outlined" style="background: red; border-radius: 8px; color: white; padding: 2px;">fire_extinguisher</span>
             </span>
             신임교육
         </div>
-        <div class="legend-item" style="color:orange;">
+        <div class="legend-item">
             <span class="legend-box">
-            <span class="material-symbols-outlined">fire_extinguisher</span>
+            <span class="material-symbols-outlined" style="background: orange; border-radius: 8px; color: white; padding: 2px;">fire_extinguisher</span>
             </span>
             기본교육
         </div>
-        <div class="legend-item" style="color:green;">
+        <div class="legend-item">
             <span class="legend-box">
-            <span class="material-symbols-outlined">fire_extinguisher</span>
+            <span class="material-symbols-outlined" style="background: navy; border-radius: 8px; color: white; padding: 2px;">fire_extinguisher</span>
             </span>
             전문교육
         </div>
-        <div class="legend-item" style="color:skyblue;">
+        <div class="legend-item">
             <span class="legend-box">
-            <span class="material-symbols-outlined">fire_extinguisher</span>
+            <span class="material-symbols-outlined" style="background: skyblue; border-radius: 8px; color: white; padding: 2px;">fire_extinguisher</span>
             </span>
             지휘역량
         </div>
-        <div class="legend-item" style="color:navy;">
+        <div class="legend-item">
             <span class="legend-box">
-            <span class="material-symbols-outlined">fire_extinguisher</span>
+            <span class="material-symbols-outlined" style="background: green; border-radius: 8px; color: white; padding: 2px;">fire_extinguisher</span>
             </span>
             보수교육
         </div>
-        <div class="legend-item" style="color:purple;">
+        <div class="legend-item">
             <span class="legend-box">
-            <span class="material-symbols-outlined">fire_extinguisher</span>
+            <span class="material-symbols-outlined" style="background: purple; border-radius: 8px; color: white; padding: 2px;">fire_extinguisher</span>
             </span>
             대민교육
         </div>

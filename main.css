@@ -445,7 +445,6 @@ hr {
     display: flex;
     align-items: center;
     gap: 2px;
-    color: red;
 }
 
 .legend-box {
@@ -480,4 +479,34 @@ hr {
     .header .logo-text .eng {
         font-size: 12px;
     }
+}
+
+.fc-header-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    /* 줄바꿈 가능하게 */
+    align-items: center;
+    justify-content: space-between;
+    /* 좌우 정렬 */
+    gap: 1rem;
+    /* 요소 간 간격 */
+}
+
+.fc-header-toolbar .fc-toolbar-chunk:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    flex: 1 1 auto;
+    /* 유연하게 줄어들고 늘어남 */
+}
+
+.calendar-legend {
+    display: flex;
+    flex-wrap: wrap;
+    /* 반응형 줄바꿈 */
+    align-items: center;
+    gap: 0.5rem 1rem;
+    flex: 0 1 auto;
+    /* 크기 줄어들 수 있음 */
 }
